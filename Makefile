@@ -1,5 +1,5 @@
-GPU=1
-CUDNN=1
+GPU=0
+CUDNN=0
 DEBUG=0
 OPENCV=0
 
@@ -12,7 +12,7 @@ ARCH= -gencode arch=compute_20,code=[sm_20,sm_21] \
 # This is what I use, uncomment if you know your arch and want to specify
 # ARCH= -gencode arch=compute_52,code=compute_52
 
-VPATH=./darknet/src/:./darknet/examples
+VPATH=../darknet/src/:../darknet/examples
 LIB=libyolo.a
 OBJDIR=./obj/
 
@@ -22,7 +22,7 @@ NVCC=nvcc
 OPTS=-Ofast
 COMMON= 
 CFLAGS=-Wall -Wfatal-errors -Wno-unused-result -fPIC
-CFLAGS+=-I./darknet/src -I./darknet/include
+CFLAGS+=-I../darknet/src -I../darknet/include
 
 ifeq ($(DEBUG), 1) 
 OPTS=-O0 -g

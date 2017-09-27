@@ -3,10 +3,10 @@ import numpy as np
 import sys
 import cv2
 
-darknet_path = './darknet'
+darknet_path = '../darknet'
 datacfg = 'cfg/coco.data'
 cfgfile = 'cfg/tiny-yolo.cfg'
-weightfile = '../tiny-yolo.weights'
+weightfile = '../pyyolo/tiny-yolo.weights'
 filename = darknet_path + '/data/person.jpg'
 thresh = 0.24
 hier_thresh = 0.5

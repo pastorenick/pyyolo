@@ -3,7 +3,7 @@
 #include <numpy/arrayobject.h>
 #include <stdio.h>
 #include "libyolo.h"
-#include "./darknet/src/image.h"
+#include "../darknet/src/image.h"
 
 static PyObject *PyyoloError;
 static yolo_handle g_handle = NULL;

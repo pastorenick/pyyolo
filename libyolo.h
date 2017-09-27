@@ -1,6 +1,6 @@
 #ifndef LIBYOLO_H
 #define LIBYOLO_H
-#include "./darknet/src/image.h"
+#include "../darknet/src/image.h"
 
 typedef void* yolo_handle;
 
